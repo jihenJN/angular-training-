@@ -9,14 +9,17 @@ import { FruitsService } from '../services/fruits.service';
 })
 export class FruitsComponent implements OnInit {
   allFruits: Fruits[] = [];
+  public errMsg: any;
   constructor(private fruitService: FruitsService) {}
   ngOnInit(): void {
     this.get();
   }
   get() {
-    this.fruitService.get().subscribe((data) => {
-      this.allFruits = data;
-      console.log(data);
-    });
+    this.fruitService.get().subscribe(
+      (data) => {
+        this.allFruits = data;
+      },
+      (error) => (this.errMsg = error)
+    );
   }
 }
