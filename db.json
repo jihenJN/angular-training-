@@ -1,19 +1,16 @@
-{
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+{"fruits":[
+  {
+   "id": 1,
+   "name": "mongo",
+   "quantity": 10,
+   "price": 350
+  },
+  {
+    "id": 2,
+    "name": "avocado",
+    "quantity": 20,
+    "price": 450
+   }
+]
+
 }
